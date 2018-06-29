@@ -30,5 +30,7 @@
     <string name="submit_one">Submit</string>
     <string name="quest_and">4. Does the sun go around the earth,or the earth around the sun?</string>
     <string name="write">7. Electrons are smaller than atoms. </string>
+    <string name="reset">RESET</string>
+    <string name="name_please">YOUR NAME PLEASE</string>
 
 </resources>

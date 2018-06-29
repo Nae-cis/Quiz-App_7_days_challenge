@@ -5,6 +5,7 @@ package com.example.android.quizzapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.CheckBox;
 import android.widget.RadioGroup;
@@ -137,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
     public void toastResult(int result, String mane) {
 
 
-        String message =  "You got" + result + " out of 7";
+        String message =  "You got " + result + " out of 7";
 
         if (result == 0) {
             message += "\nTry Again\n   " + mane;
@@ -270,7 +271,61 @@ public class MainActivity extends AppCompatActivity {
 
         return (String)radioButtonQuestion.getText();
     }
+    public void reset(View view) {
+        EditText editText = findViewById(R.id.answer_quest);
+        editText.setText("");
 
+        EditText nameText = findViewById(R.id.name_input);
+        nameText.setText("");
+
+        CheckBox checkBox = findViewById(R.id.gyro_checkbox );
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.thermo_checkbox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.hydro_checkbox);
+        checkBox.setChecked(false);
+
+        RadioGroup radioGroup = findViewById(R.id.radioCorrect);
+        radioGroup.clearCheck();
+
+        checkBox = findViewById(R.id.chile_checkbox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.botswana_checkbox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.india_checkbox);
+        checkBox.setChecked(false);
+        checkBox = findViewById(R.id.hydrosphere_checkbox );
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.atom_checkbox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.upper_checkbox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.camel_checkbox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.tiger_checkbox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.dog_checkbox);
+        checkBox.setChecked(false);
+        checkBox = findViewById(R.id.dig_checkBox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.photo_checkbox);
+        checkBox.setChecked(false);
+
+        checkBox = findViewById(R.id.excrete_checkBox);
+        checkBox.setChecked(false);
+
+
+    }
 
 
 

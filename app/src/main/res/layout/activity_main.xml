@@ -203,8 +203,8 @@
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
             android:paddingLeft="5dp"
-            android:textAllCaps="true"
-            android:text="@string/quest_and" />
+            android:text="@string/quest_and"
+            android:textAllCaps="true" />
 
         <EditText
             android:id="@+id/answer_quest"
@@ -343,18 +343,38 @@
             android:layout_marginBottom="10dp"
             android:layout_marginTop="10dp"
             android:fontFamily="casual"
-            android:hint="YOUR NAME PLEASE "
-
+            android:hint="@string/name_please"
             android:inputType="textMultiLine" />
 
-        <Button
-            android:id="@+id/buttonShowPoP"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
 
-            android:onClick="submitOrder"
-            android:text="SHOW RESULT" />
+
+
+            <Button
+                android:id="@+id/buttonShowPoP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#E0E0E0"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="7dp"
+                android:onClick="submitOrder"
+                android:text="SHOW RESULT"
+                android:textColor="#3E2723"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="reset"
+                android:background="#E0E0E0"
+                android:textColor="#3E2723"
+                android:text="RESET"
+                android:textStyle="bold" />
+
 
     </LinearLayout>
 </ScrollView>
